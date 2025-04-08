@@ -2,10 +2,13 @@ const express = require('express');
 const http = require('http');
 const socketIo = require('socket.io');
 
+require('dotenv').config();
+const PORT = process.env.PORT;
+const HOST = process.env.HOST;
 const app = express();
 const server = http.createServer(app);
 const io = socketIo(server, {
-  cors: { origin: '*' }, 
+  cors: { origin: '*' },
 });
 
 // Danh sách client React Native
@@ -61,6 +64,15 @@ io.on('connection', (socket) => {
   });
 });
 
-server.listen(3000, () => {
-  console.log('Server running on port 3000');
+
+
+const router = express.Router();
+router.get('/', (req, res) => {
+  res.send('Hello World!');
+});
+
+app.use('/', router);
+
+server.listen(PORT, HOST, () => {
+  console.log(`Server running on http://${HOST}:${PORT}`);
 });
