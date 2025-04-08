@@ -1,0 +1,41 @@
+{
+  "name": "RN-thupha4141",
+  "version": "1.0.0",
+  "main": "expo/AppEntry.js",
+  "author": {
+    "name": "Ngô Thuận Phát",
+    "url": "https://github.com/Thupha41?tab=repositories"
+  },
+  "scripts": {
+    "start": "expo start",
+    "dev": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios"
+  },
+  "dependencies": {
+    "@expo/vector-icons": "^14.0.4",
+    "@google/generative-ai": "^0.24.0",
+    "@react-native-async-storage/async-storage": "^2.1.2",
+    "@tensorflow/tfjs": "^4.22.0",
+    "@tensorflow/tfjs-react-native": "^1.0.0",
+    "axios": "^1.8.2",
+    "dotenv": "^16.4.7",
+    "expo": "51.0.22",
+    "expo-camera": "^16.0.18",
+    "expo-file-system": "^18.0.12",
+    "expo-gl": "^15.0.5",
+    "expo-image-picker": "^16.0.6",
+    "expo-status-bar": "1.12.1",
+    "path-browserify": "^1.0.1",
+    "react": "18.2.0",
+    "react-native": "0.74.3",
+    "react-native-fs": "^2.20.0",
+    "react-native-polyfill-globals": "^3.1.0"
+  },
+  "devDependencies": {
+    "@babel/core": "7.24.9",
+    "@types/react": "18.2.79",
+    "typescript": "5.3.3"
+  },
+  "private": true
+}
